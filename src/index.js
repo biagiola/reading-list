@@ -4,6 +4,7 @@ import './style.css';
 import BookContextProvider from './contexts/BookContext';
 import Navbar from './components/Navbar';
 import BookList from './components/BookList';
+import NewBookForm from './components/BookForm';
 
 class App extends Component {
   constructor() {
@@ -19,7 +20,9 @@ class App extends Component {
         <BookContextProvider>
           <Navbar/>
           <BookList/>
+          <NewBookForm/>
         </BookContextProvider>
+        
       </div>
     );
   }
