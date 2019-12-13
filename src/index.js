@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import './style.css';
 import BookContextProvider from './contexts/BookContext';
 import Navbar from './components/Navbar';
+import BookList from './components/BookList';
 
 class App extends Component {
   constructor() {
@@ -17,6 +18,7 @@ class App extends Component {
       <div>
         <BookContextProvider>
           <Navbar/>
+          <BookList/>
         </BookContextProvider>
       </div>
     );
@@ -24,3 +26,4 @@ class App extends Component {
 }
 
 render(<App />, document.getElementById('root'));
+
