@@ -7,6 +7,7 @@ const Navbar = () => {
     <div className="navbar">
       <h1>welcome</h1>
       <p>currently you have { books.length } books to get through</p>
+      
     </div>
   );
 }
